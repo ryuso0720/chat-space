@@ -29,19 +29,28 @@
             color: #ffffff;
           }
         }
-        &__edit-user{
-          color: #ffffff;
-        }
       }
     }
   }
 
-  .group-list{
+  .groups{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+
+  .group{
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 20px;
+    &__group-name{
+      font-size: 15px;
+    }
+    &__latest-message{
+      font-size: 11px;
+      margin-top: 5px;
+    }
+   }
   }
 }
-
 
 .chat-main{
   width: calc(100vw - 300px);
