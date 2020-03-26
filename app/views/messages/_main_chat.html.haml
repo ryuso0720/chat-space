@@ -15,4 +15,12 @@
     %p.message__upper-info__date 2020/03/25(Wed) 17:43:01
    .message__text おはよう！
 
- .message-form
+ .form
+  .contents
+   %input.contents__text{:placeholder => "type a message", :type => "text"}/
+   %label{class: "contents__image"}
+    = icon('far', 'image')
+    %input{type: "file"}
+  
+  .send-btn Send
+   
