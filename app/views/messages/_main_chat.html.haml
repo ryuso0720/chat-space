@@ -1,4 +1,12 @@
 .chat-main
- .chat-main__group-info
- .chat-main__message-list
- .chat-main__message-form
+ .group-info
+  .group-info__left-box
+   %h2.group-info__left-box__current-group test
+   %ul.group-info__left-box__member-list Member :
+   %li.group-info__left-box__member takahashi
+  .group-info__edit-btn
+   = link_to "#" do
+    Edit
+
+.message-list
+.message-form

@@ -43,10 +43,12 @@
     padding-top: 20px;
     &__group-name{
       font-size: 15px;
+      font-weight: bold;
     }
     &__latest-message{
       font-size: 11px;
       margin-top: 5px;
+      font-weight: bold;
     }
    }
   }
@@ -56,17 +58,55 @@
   width: calc(100vw - 300px);
   height: 100vh;
   float: left;
-  &__group-info{
+  .group-info{
     height: 100px;
     background-color: #ffffff;
     border-bottom:solid 1px #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &__left-box{
+      margin-top: 35px;
+      &__current-group{
+        color: #333333;
+        font-size: 20px;
+      }
+      &__member-list{
+        color: #999999;
+        font-size: 12px;
+        float: left;
+        margin-top: 15px;
+      }
+      li{
+        color: #999999;
+        font-size: 12px;
+        list-style: none;
+        float: left;
+        margin-top: 15px;
+      }
+     }
+    &__edit-btn{
+      width: 72px;
+      height: 40px;
+      border: solid 1px #38aef0;
+      position: absolute;
+      margin-top: 28px;
+      right: 40px;
+      text-align: center;
+      a{
+        color: #38aef0;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
   }
 
-  &__message-list{
+  .message-list{
     background-color: #fafafa;
     height: calc(100vh - 190px);
   }
-  &__message-form{
+  .message-form{
     height: 90px;
     background-color: #d2d2d2;
   }
