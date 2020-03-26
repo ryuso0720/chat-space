@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+$section-color: #ffffff ;
+section {
+  background-color: $section-color;
+  color: $section-color;
+}
+
+
 .chat-side{
   width: 300px;
   height: 100vh;
@@ -20,13 +27,13 @@
       height: 20px;
       font-weight: bold;
       line-height: 20px;
-      color: #ffffff;
+      color: $section-color;
       &__icons{
         display: flex;
         li {
           margin-left: 5px;
           a{
-            color: #ffffff;
+            color: $section-color;
           }
         }
       }
@@ -38,7 +45,7 @@
     height: calc(100vh - 100px);
 
   .group{
-    color: #ffffff;
+    color: $section-color;
     padding-left: 20px;
     padding-top: 20px;
     &__group-name{
@@ -46,9 +53,8 @@
       font-weight: bold;
     }
     &__latest-message{
-      font-size: 16px;
+      font-size: 11px;
       margin-top: 5px;
-      font-weight: bold;
     }
    }
   }
@@ -60,7 +66,7 @@
   float: left;
   .group-info{
     height: 100px;
-    background-color: #ffffff;
+    background-color: $section-color;
     border-bottom:solid 1px #eeeeee;
     display: flex;
     justify-content: space-between;
@@ -161,7 +167,7 @@
     .send-btn{
       background-color: #38aef0;
       text-align: center;
-      color: white;
+      color: $section-color;
       line-height: 50px;
       margin-left: 15px;
       width: 100px;
