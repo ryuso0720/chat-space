@@ -67,6 +67,7 @@
     position: relative;
     &__left-box{
       margin-top: 35px;
+      margin-left: 40px;
       &__current-group{
         color: #333333;
         font-size: 20px;
@@ -102,10 +103,34 @@
     }
   }
 
-  .message-list{
+  .messages{
     background-color: #fafafa;
     height: calc(100vh - 190px);
+    padding: 40px 40px;
+    .message{
+      margin-bottom: 46px;
+      &__upper-info{
+        display: flex;
+        margin-bottom: 12px;
+        &__talker{
+          color: #333333;
+          font-weight: bold;
+          font-size: 16px;
+        }
+       &__date{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+       }
+      }
+      &__text{
+        color: #434a54;
+        font-size: 14px;
+      }
+    }
   }
+
+
   .message-form{
     height: 90px;
     background-color: #d2d2d2;
