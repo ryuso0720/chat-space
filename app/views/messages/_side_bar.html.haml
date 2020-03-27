@@ -1,13 +1,14 @@
 .chat-side
  .side-bar
   .side-bar__items
-   %p.side-bar__items__name takahashi
+   %p.side-bar__items__name
+    = current_user.name
    %ul.side-bar__items__icons
     %li.side-bar__items__new-group 
-     = link_to "#" do
+     = link_to do
       = icon('fas','edit')
     %li.side-bar__items__edit-user
-     = link_to "#" do
+     = link_to edit_user_path(current_user) do
       = icon('fas', 'cog')
 
    
