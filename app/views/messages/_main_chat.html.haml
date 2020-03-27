@@ -1,0 +1,25 @@
+.chat-main
+ .group-info
+  .group-info__left-box
+   %h2.group-info__left-box__current-group test
+   %ul.group-info__left-box__member-list Member :
+   %li.group-info__left-box__member takahashi
+  .group-info__edit-btn
+   = link_to "#" do
+    Edit
+
+ .messages
+  .message
+   .message__upper-info
+    %p.message__upper-info__talker takahashi
+    %p.message__upper-info__date 2020/03/25(Wed) 17:43:01
+   .message__text おはよう！
+
+ .form
+  .contents
+   %input.contents__text{:placeholder => "type a message", :type => "text"}/
+   %label{class: "contents__image"}
+    = icon('far', 'image')
+    %input{type: "file"}
+  
+  %input.send-btn{:type =>"submit",:value => "Send"}
