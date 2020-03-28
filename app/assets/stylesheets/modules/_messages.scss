@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
+
 
 $section-color: #ffffff ;
 section {
@@ -43,15 +45,19 @@ section {
   .groups{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    p{
+      color: #ffffff;
+    }
 
   .group{
     color: $section-color;
     padding-left: 20px;
     padding-top: 20px;
     &__group-name{
-      font-size: 15px;
-      font-weight: bold;
-    }
+        font-size: 15px;
+        font-weight: bold;
+      }
+
     &__latest-message{
       font-size: 11px;
       margin-top: 5px;
@@ -82,14 +88,14 @@ section {
         color: #999999;
         font-size: 12px;
         float: left;
-        margin-top: 15px;
+        margin-top: 10px;
       }
       li{
         color: #999999;
         font-size: 12px;
         list-style: none;
         float: left;
-        margin-top: 15px;
+        margin-top: 10px;
       }
      }
     &__edit-btn{
