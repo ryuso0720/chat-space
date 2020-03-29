@@ -147,13 +147,13 @@ section {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    margin: auto;
     display: flex;
+    align-items: center;
     .contents{
       height: 50px;
       width: 100%;
       position: relative;
-      margin: auto;
+      align-items: center;
       &__text{
         height: 50px;
         width: 85%;
@@ -176,8 +176,12 @@ section {
         color: $section-color;
         line-height: 50px;
         width: 100px;
-        position: absolute;
         margin-left: 15px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+
             }
     //  .send-btn{
     //    background-color: #38aef0;
