@@ -1,25 +1,38 @@
 .chat-main
  .group-info
   .group-info__left-box
-   %h2.group-info__left-box__current-group test
+   %h2.group-info__left-box__current-group
+    = @group.name
    %ul.group-info__left-box__member-list Member :
-   %li.group-info__left-box__member takahashi
+   %li.group-info__left-box__member
+    - @group.users.each do |user|
+     = user.name
   .group-info__edit-btn
-   = link_to "#" do
+   = link_to edit_group_path(@group) do
     Edit
 
  .messages
-  .message
-   .message__upper-info
-    %p.message__upper-info__talker takahashi
-    %p.message__upper-info__date 2020/03/25(Wed) 17:43:01
-   .message__text おはよう！
+  = render @messages
+  -# .message
+  -#  .message__upper-info
+  -#   %p.message__upper-info__talker
+  -#    message.user.name
+  -#   %p.message__upper-info__date
+  -#    = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  -#  .message__text おはよう！
 
  .form
   .contents
-   %input.contents__text{:placeholder => "type a message", :type => "text"}/
-   %label{class: "contents__image"}
-    = icon('far', 'image')
-    %input{type: "file"}
+   = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'contents__text', placeholder: 'type a message'
+    = f.label :image, class: 'contents__image' do
+     = icon('fas', 'image', class: 'icon')
+     = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'send-btn'
+  -# .contents
+  -#  %input.contents__text{:placeholder => "type a message", :type => "text"}/
+  -#  %label{class: "contents__image"}
+  -#   = icon('far', 'image')
+  -#   %input{type: "file"}
   
-  %input.send-btn{:type =>"submit",:value => "Send"}
+  -# %input.send-btn{:type =>"submit",:value => "Send"}

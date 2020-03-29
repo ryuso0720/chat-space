@@ -147,37 +147,51 @@ section {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    margin: auto;
     display: flex;
+    align-items: center;
     .contents{
       height: 50px;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
       position: relative;
+      align-items: center;
       &__text{
         height: 50px;
-        width: 100%;
+        width: 85%;
         line-height: 50px;
-        }
+      }
       &__image{
-          margin-right: 10px;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 20px;
-          input{
-            display: none;
-          }
+        margin-right: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        right: 130px;
+        input{
+          display: none;
         }
       }
-    .send-btn{
-      background-color: #38aef0;
-      text-align: center;
-      color: $section-color;
-      line-height: 50px;
-      margin-left: 15px;
-      width: 100px;
-      }
+      .send-btn{
+        background-color: #38aef0;
+        text-align: center;
+        color: $section-color;
+        line-height: 50px;
+        width: 100px;
+        margin-left: 15px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+
+            }
+    //  .send-btn{
+    //    background-color: #38aef0;
+    //    text-align: center;
+    //    color: $section-color;
+    //    line-height: 50px;
+    //    margin-left: 15px;
+    //    width: 100px;
+    //    position: absolute;
+    //   }
     }
   }
+}
