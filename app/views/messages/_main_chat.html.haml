@@ -1,9 +1,12 @@
 .chat-main
  .group-info
   .group-info__left-box
-   %h2.group-info__left-box__current-group test
+   %h2.group-info__left-box__current-group
+    = @group.name
    %ul.group-info__left-box__member-list Member :
-   %li.group-info__left-box__member takahashi
+   %li.group-info__left-box__member
+    - @group.users.each do |user|
+     = user.name
   .group-info__edit-btn
    = link_to "#" do
     Edit
