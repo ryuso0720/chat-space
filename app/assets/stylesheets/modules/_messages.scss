@@ -116,6 +116,8 @@ section {
   }
 
   .messages{
+    z-index: 1;
+    overflow: scroll;
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 40px 40px;
@@ -144,6 +146,7 @@ section {
 
 
   .form{
+    clear: both;
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
@@ -156,7 +159,7 @@ section {
       align-items: center;
       &__text{
         height: 50px;
-        width: 90%;
+        width: 85%;
         line-height: 50px;
       }
       &__image{
@@ -165,7 +168,7 @@ section {
         top: 10px;
         right: 10px;
         font-size: 20px;
-        right: 130px;
+        right: 185px;
         input{
           display: none;
         }
