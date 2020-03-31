@@ -43,7 +43,7 @@ $(function(){
         message.created_at +
         `</div>` +
         `</div>` +
-        `<div class="message__text">` +
+        `<div class="message__content">` +
         `<img src="` + message.image + `" class="lower-message__image" >` +
         `</div>` +
         `</div>`
