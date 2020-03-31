@@ -16,6 +16,7 @@ section {
   height: 100vh;
   background-color: #253141;
   float: left;
+  position: relative;
   .side-bar{
     height: 100px;
     display: flex;
@@ -116,6 +117,7 @@ section {
   }
 
   .messages{
+    overflow: scroll;
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 40px 40px;
@@ -144,11 +146,15 @@ section {
 
 
   .form{
+    position: absolute;
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
+    left: 300px;
     display: flex;
     align-items: center;
+    bottom: 0px;
+    width: calc(100vw - 300px);
     .contents{
       height: 50px;
       width: 100%;
@@ -156,16 +162,15 @@ section {
       align-items: center;
       &__text{
         height: 50px;
-        width: 85%;
+        width: 90%;
         line-height: 50px;
       }
       &__image{
         margin-right: 10px;
         position: absolute;
         top: 10px;
-        right: 10px;
         font-size: 20px;
-        right: 130px;
+        right: 120px;
         input{
           display: none;
         }
