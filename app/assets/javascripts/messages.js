@@ -44,7 +44,7 @@ $(function(){
         </div>
         </div>
         <div class="message__content">
-        <img src="  ${message.image} " class="lower-message__image" >
+        <img src="${message.image}" class="lower-message__image" >
         </div>
         </div>`
     };
@@ -78,7 +78,7 @@ $(function(){
   }
 };
 setInterval(reloadMessages, 5000);//5000ミリ秒ごとにreloadMessagesという関数を実行し自動更新を行う。
-});
+
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
@@ -103,3 +103,4 @@ setInterval(reloadMessages, 5000);//5000ミリ秒ごとにreloadMessagesとい�
       alert("メッセージ送信に失敗しました");
   });
   })
+});
