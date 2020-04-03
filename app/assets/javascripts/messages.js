@@ -70,7 +70,8 @@ $(function(){
         insertHTML = buildHTML(message); //メッセージが入ったHTMLを取得
         $('.messages').append(insertHTML);//メッセージを追加
       })
-      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');//最新のメッセージが一番下に表示されようにスクロールする。
+      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});//最新のメッセージが一番下に表示されようにスクロールする。
+      $('form')[0].reset();
     })
     .fail(function () {
       alert('自動更新に失敗しました');//
