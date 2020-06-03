@@ -1,3 +1,15 @@
+# chat-space
+本アプリはTECH CAMPで作成したチャットアプリである。
+[![Image from Gyazo](https://i.gyazo.com/9c8a1284156847f64ed82c271352ea77.gif)](https://gyazo.com/9c8a1284156847f64ed82c271352ea77)
+
+## App URL
+http://3.115.186.159/
+
+## ゲスト用アカウント
+|email|password|
+|---|---|
+|guest@gmail.com|11111111|
+
 # chat-space DB設計
 ## usersテーブル
 |Column|Type|Options|
