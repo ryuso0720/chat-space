@@ -4,7 +4,7 @@
 [![Image from Gyazo](https://i.gyazo.com/9c8a1284156847f64ed82c271352ea77.gif)](https://gyazo.com/9c8a1284156847f64ed82c271352ea77)
 
 ## App URL
-http://3.115.186.159/
+http://3.115.186.159/ (停止)
 
 ## ゲスト用アカウント
 |email|password|
